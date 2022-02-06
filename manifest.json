@@ -10,9 +10,22 @@
      "default_popup": "popup.html"
     },
     "permissions": [
-        "experimental",
         "notifications",
-        "http://*/"
+        "http://*/",
+        "https://*/"
+    ],
+
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+
+            "js": [
+                "content.js"
+            ]
+        }
     ],
     "devtools_page": "devtools.html"
   }
