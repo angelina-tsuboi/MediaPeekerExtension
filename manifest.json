@@ -10,6 +10,9 @@
      "default_popup": "popup.html"
     },
     "permissions": [
-     "activeTab"
-    ]
+        "experimental",
+        "notifications",
+        "http://*/"
+    ],
+    "devtools_page": "devtools.html"
   }

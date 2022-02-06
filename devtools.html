@@ -1,0 +1,25 @@
+<script>
+    'use strict';
+    function getMedia() {
+        lastStylesheet = null;
+        chrome.experimental.devtools.inspectedWindow.getResources(function(resources) {
+            var i = resources.length;
+            while (i--) {
+                var resource = resources[i];
+                // if (resource.type === 'stylesheet' && resource.url !== 'about:blank') {
+                //     resource.getContent(function(content) {
+                //         lastStylesheet = {
+                //             content: content,
+                //             url: resource.url
+                //         };
+                //         console.log('lastStylesheet.url:', resource.url);
+                //     });
+                //     break;
+                // }
+                console.log("resource is", resource)
+            }
+        });
+    }
+
+    getMedia();
+</script>

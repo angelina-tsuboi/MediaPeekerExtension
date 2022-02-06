@@ -6,3 +6,4 @@ Chrome extension to view all media for a webpage
 - view media metadata
 - preview media (documents, etc)
 - sort media by name, file size, etc
+- devtools and UI option
