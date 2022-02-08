@@ -1,0 +1,14 @@
+.media-home{
+    min-width: 40rem;
+}
+
+.bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bar h3{
+    font-weight: bold;
+    margin-top: 1rem;
+}
